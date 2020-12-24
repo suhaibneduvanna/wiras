@@ -1,0 +1,54 @@
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 m-auto pt-5">
+                <h2 class="text-center">Add marks</h2>
+                 <div class="d-flex flex-row-reverse mt-2">
+                    <button onclick="addFields()" class="btn btn-info m-1">+</button>
+                    <button onclick="removeFields()" class="btn btn-info m-1">-</button>
+                 </div>
+                <form  action="/admin/add-marks?id={{studentId}}" method="POST">
+                    <div class="form-group">
+                        <label for="">Current class</label>
+                        <select required class="form-control" name="Semester">
+                            <option value="" selected disabled>Select semester</option>
+                            <option value="Semester 1">Semester 1</option>
+                            <option value="Semester 2">Semester 2</option>
+                            <option value="Semester 3">Semester 3</option>
+                            <option value="Semester 4">Semester 4</option>
+                            <option value="Semester 5">Semester 5</option>
+                            <option value="Semester 6">Semester 6</option>
+                            <option value="Semester 7">Semester 7</option>
+                            <option value="Semester 8">Semester 8</option>
+                            <option value="Semester 9">Semester 9</option>
+                            <option value="Semester 10">Semester 10</option>
+                        </select>
+                    </div>
+
+                    <div id="container">
+                        <div id="inputfield-1" class="form-group row">
+                        <div class="col-md-9">
+                            <select name="Subject" onchange="selectSubject(this.id)" class="form-control" id="1">
+                                <option value="">Select class</option>
+                                <option value="Alfiya">UG 1</option>
+                                <option value="Fathhul Mueen">UG 2</option>
+                                <option value="Mishkath">UG 3</option>
+                                <option value="Bhukari">BS 4</option>
+                                <option value="Muslim">BS 5</option>
+                                <option value="Nafais">PG 1</option>
+                                <option value="Thufa">PG 2</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <input name="Mark" id="inp-1" type="text" class="form-control">
+                        </div>
+                    </div>
+                    </div>
+                    <button  type="submit" class="btn btn-info m-1">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,53 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 m-auto pt-5">
+                <h2 class="text-center">Search student</h2>
+                <form action="/admin/search-student" method="POST">
+                    <div class="form-group">
+                        <label for="">Admission no</label>
+                        <input  type="text" class="form-control" name="AdmissionNo">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Full Name</label>
+                        <input  type="text" class="form-control" name="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mobile</label>
+                        <input  type="tel" maxlength="10" pattern="[0-9]{10}"  name="Mobile" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Blood group</label>
+                        <input  type="text" pattern="(A|B|AB|O)[+-]" class="form-control" name="BloodGroup">
+                    </div>
+                     <div class="form-group">
+                        <label for="">Current class</label>
+                        <select   class="form-control" name="Class">
+                            <option value="">Select class</option>
+                            <option value="UG 1">UG 1</option>
+                            <option value="UG 2">UG 2</option>
+                            <option value="UG 3">UG 3</option>
+                            <option value="BS 4">BS 4</option>
+                            <option value="BS 5">BS 5</option>
+                            <option value="PG 1">PG 1</option>
+                            <option value="PG 2">PG 2</option>
+                        </select>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button onclick="search()" class="btn btn-primary">Search</button>
+                    </div>
+                    
+                </form>
+            </div>
+
+            
+            
+            
+                
+            
+            
+            
+
+        </div>
+    </div>
+</section>

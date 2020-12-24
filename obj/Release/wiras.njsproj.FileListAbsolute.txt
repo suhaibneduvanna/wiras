@@ -1,0 +1,2 @@
+C:\Users\SUHAIB N\Desktop\wiras\WIRAS\obj\Release\wiras.njsproj.CoreCompileInputs.cache
+C:\Users\SUHAIB N\Desktop\wiras\WIRAS\bin\Microsoft.NodejsTools.WebRole.dll

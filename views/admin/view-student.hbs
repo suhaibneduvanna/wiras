@@ -1,0 +1,215 @@
+<div class="main-content">
+  <!-- Top navbar -->
+  <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+    <div class="container-fluid">
+
+      <!-- Page content -->
+      <div class="container-fluid mt--7">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="card bg-light shadow">
+              <div class="card-header bg-white border-0">
+                <div class="row align-items-center">
+                  <div class="col-8">
+                    <h3 class="mb-0">{{student.Name}}</h3>
+                  </div>
+                  <div class="col-4 text-right">
+                    <a href="#" class="btn btn-sm btn-primary">Settings</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-lg-3 order-lg-2 d-flex justify-content-center">
+                    <div class="card-profile-image">
+
+                      <img style="height: 45mm; width: 35mm;" src="/images/students-images/{{student._id}}.jpg">
+
+                    </div>
+                  </div>
+                </div>
+                <form>
+                  <h6 class="heading-small text-muted mb-4">Personal information</h6>
+                  <div class="pl-lg-4">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input disabled-username">Admission no</label>
+                          <input disabled id="input disabled-username" class="form-control form-control-alternative"
+                            value="{{student.AdmissionNo}}">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label class="form-control-label" for="input disabled-email">Full name</label>
+                          <input disabled type="text" id="input disabled-email"
+                            class="form-control form-control-alternative" value="{{student.Name}}">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input disabled-first-name">Date of birth</label>
+                          <input disabled type="date" id="input disabled-first-name"
+                            class="form-control form-control-alternative" value="{{student.Dob}}">
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input disabled-last-name">Current class</label>
+                          <input disabled id="input disabled-last-name" class="form-control form-control-alternative"
+                            value="{{student.Class}}">
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input disabled-last-name">Blood group</label>
+                          <input disabled id="input disabled-last-name" class="form-control form-control-alternative"
+                            value="{{student.BloodGroup}}">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="my-4">
+                  <!-- Address -->
+                  <h6 class="heading-small text-muted mb-4">Contact information</h6>
+                  <div class="pl-lg-4">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input disabled-address">Address</label>
+                          <textarea disabled id="input disabled-address"
+                            class="form-control form-control-alternative">{{student.Address}}</textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input disabled-city">State</label>
+                          <input disabled type="text" id="input disabled-city"
+                            class="form-control form-control-alternative" value="{{student.State}}">
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input disabled-country">Country</label>
+                          <input disabled type="text" id="input disabled-country"
+                            class="form-control form-control-alternative" value="{{student.Country}}">
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="form-group">
+                          <label class="form-control-label" for="input disabled-country">Postal code</label>
+                          <input disabled id="input disabled-postal-code" class="form-control form-control-alternative"
+                            value="{{student.Pincode}}">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input disabled-city">Mobile</label>
+                          <input disabled type="tel" id="input disabled-city"
+                            class="form-control form-control-alternative" value="{{student.Mobile}}">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input disabled-country">Email</label>
+                          <input disabled type="email" id="input disabled-country"
+                            class="form-control form-control-alternative" value="{{student.Email}}">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="my-4">
+                  <!-- Guardian's Details -->
+                  <h6 class="heading-small text-muted mb-4">Guardian's information</h6>
+                  <div class="pl-lg-4">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input disabled-city">Full name</label>
+                          <input disabled type="text" id="input disabled-city"
+                            class="form-control form-control-alternative" value="{{student.Gname}}">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input disabled-country">Occupation</label>
+                          <input disabled type="text" id="input disabled-country"
+                            class="form-control form-control-alternative" value="{{student.Goccupation}}">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input disabled-city">Mobile</label>
+                          <input disabled type="tel" id="input disabled-city"
+                            class="form-control form-control-alternative" value="{{student.Gmobile}}">
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group focused">
+                          <label class="form-control-label" for="input disabled-country">Email</label>
+                          <input disabled type="email" id="input disabled-country"
+                            class="form-control form-control-alternative" value="{{student.Gemail}}">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="my-4">
+                </form>
+
+                <h3 class="heading-small text-muted mb-4">Marks</h3>
+                <div class="form-group col-lg-4">
+                  <label>Semester:</label>
+                  <select id="semester" onchange="change2('{{student._id}}')" required class="form-control"
+                    name="Semester">
+                    <option value="" selected disabled>Select semester</option>
+                    <option value="Semester 1">Semester 1</option>
+                    <option value="Semester 2">Semester 2</option>
+                    <option value="Semester 3">Semester 3</option>
+                    <option value="Semester 4">Semester 4</option>
+                    <option value="Semester 5">Semester 5</option>
+                    <option value="Semester 6">Semester 6</option>
+                    <option value="Semester 7">Semester 7</option>
+                    <option value="Semester 8">Semester 8</option>
+                    <option value="Semester 9">Semester 9</option>
+                    <option value="Semester 10">Semester 10</option>
+                  </select>
+                </div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Subject</th>
+                      <th scope="col">Mark</th>
+                    </tr>
+                  </thead>
+                  <tbody id="markviewContainer">
+
+                  </tbody>
+                </table>
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<div id="cover-spin"></div>
